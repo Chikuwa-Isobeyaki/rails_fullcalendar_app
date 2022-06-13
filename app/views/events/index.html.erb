@@ -1,0 +1,16 @@
+<div id='calendar'></div>
+
+<%# ここから追加 %>
+<div id="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+<%= javascript_pack_tag 'calendar' %>
+
+<%=form_with model: Event.new, id: "event" %>
